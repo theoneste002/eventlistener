@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    color: rgb(25, 25, 82);
+
+    
+}
+form input{
+    box-shadow: 0px 5px 3px 4px;
+    width: 20%;
+    padding: 5px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+form button{
+    box-shadow: 0px 5px 3px 4px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(25, 25, 73);
+    color: white;
+}
+form{
+    text-align: center;
+}
+.card1{
+    margin: 10px 5px;
+    width: 24%;
+    border: 1px solid rgb(17, 15, 15);
+    border-radius: 5px;
+    margin-left: 417px;
+    box-shadow: 0px 5px 3px 4px;
+}
+.card2{
+    margin: 10px 5px;
+    width: 24%;
+    border: 1px solid rgb(22, 20, 20);
+    border-radius: 5px;
+    margin-left: 417px;
+    box-shadow: 0px 5px 3px 4px;
+}
+.card3{
+    margin: 10px 5px;   
+    box-shadow: 0px 5px 3px 4px;
+    width: 24%;
+    border: 1px solid rgb(7, 5, 5);
+    border-radius: 5px;
+    margin-left: 417px;
+}

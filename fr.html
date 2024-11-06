@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #1a237e;
+    }
+    .input-container {
+      margin-bottom: 20px;
+    }
+    #taskInput {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+    #addButton {
+      padding: 10px 15px;
+      font-size: 16px;
+      color: white;
+      background-color: #1a237e;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+    .task {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px auto;
+      padding: 15px;
+      width: 300px;
+      background-color: #f4f4f4;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .task h3 {
+      margin: 0;
+      color: #1a237e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Task of Management System</h1>
+  
+  <div class="input-container">
+    <input type="text" id="taskInput" placeholder="Typing Task here">
+    <button id="addButton">Add</button>
+  </div>
+
+  <div id="taskList">
+    <!-- Tasks will appear here -->
+  </div>
+
+  <script>
+    document.getElementById('addButton').addEventListener('click', function() {
+      const taskInput = document.getElementById('taskInput');
+      const taskText = taskInput.value.trim();
+      
+      if (taskText) {
+        addTask(taskText);
+        taskInput.value = ''; // Clear input field
+      }
+    });
+
+    function addTask(taskText) {
+      const taskList = document.getElementById('taskList');
+      const taskElement = document.createElement('div');
+      taskElement.className = 'task';
+
+      const taskTitle = document.createElement('h3');
+      taskTitle.textContent = `Task ${taskList.children.length + 1}`;
+
+      const taskDescription = document.createElement('p');
+      taskDescription.textContent = taskText;
+
+      taskElement.appendChild(taskTitle);
+      taskElement.appendChild(taskDescription);
+      taskList.appendChild(taskElement);
+    }
+  </script>
+
+</body>
+</html>

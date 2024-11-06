@@ -1,0 +1,18 @@
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+#color{
+    background-color: rgb(16, 35, 209);
+    width: 18rem;
+    height: 16rem;
+    
+
+   
+ 
+}
